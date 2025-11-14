@@ -4,7 +4,7 @@ import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
 import rehypeExternalLinks from "rehype-external-links";
-import remarkParseContent from "./src/lib/utils/remarkParseContent.ts";
+// import remarkParseContent from "./src/lib/utils/remarkParseContent.ts";
 import {
   parseTomlToJson,
   reloadOnTomlChange,
@@ -43,7 +43,7 @@ export default defineConfig({
         },
       ],
     ],
-    remarkPlugins: [remarkParseContent],
+    remarkPlugins: [],
 
     // Code Highlighter https://github.com/shikijs/shiki
     shikiConfig: {
